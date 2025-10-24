@@ -1,30 +1,26 @@
 /* base.css — Design system e reset */
 :root{
   /* Paleta de cores */
-  --c-primary-100:#e8f5ea;
-  --c-primary-500:#2e7d32;
-  --c-primary-700:#1b5e20;
-  --c-secondary-100:#eaf7f0;
-  --c-secondary-500:#388e3c;
-  --c-accent-500:#80cbc4;
-  --c-neutral-900:#0b0b0b;
-  --c-neutral-700:#333333;
+  --c-primary-500:#2E8BFF;
+  --c-primary-700:#0052CC;
+  --c-secondary-500:#00C48C;
+  --c-accent-500:#FFC107;
+  --c-neutral-900:#1A1A1A;
   --c-neutral-500:#666666;
-  --c-neutral-300:#dfeee0;
-  --c-success:#2e7d32;
-  --c-warning:#ffb300;
-  --c-danger:#d32f2f;
-  --c-info:#0288d1;
-  --c-white:#ffffff;
-  --c-surface:#f7faf7;
+  --c-white:#FFFFFF;
+  --c-surface:#F9FAFB;
+  --c-success:#2E7D32;
+  --c-warning:#FFB300;
+  --c-danger:#D32F2F;
+  --c-info:#0288D1;
 
   /* Tipografia */
-  --font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  --font-family:'Poppins', sans-serif;
   --fs-xs:12px;
   --fs-sm:14px;
   --fs-md:16px;
-  --fs-lg:20px;
-  --fs-xl:28px;
+  --fs-lg:22px;
+  --fs-xl:32px;
   --fw-regular:400;
   --fw-medium:600;
   --fw-bold:700;
@@ -39,9 +35,9 @@
 
   /* Layout */
   --container-max:1200px;
-  --radius:10px;
-  --elevation-1:0 1px 3px rgba(11,11,11,0.08);
-  --elevation-2:0 6px 18px rgba(11,11,11,0.12);
+  --radius:16px;
+  --elevation-1:0 10px 25px rgba(0,0,0,0.08);
+  --elevation-2:0 15px 35px rgba(0,0,0,0.15);
   --gutter:var(--space-2);
 }
 
