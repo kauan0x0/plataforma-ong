@@ -5,13 +5,30 @@ Projeto desenvolvido como atividade da faculdade, com o objetivo de criar uma pl
 
 ## Funcionalidades
 
-- Página inicial com informações institucionais, missão, visão e valores.  
-- Página de projetos com os destaques:  
-  - **Educar para Crescer** – reforço escolar e oficinas educativas.  
-  - **Alimento para Todos** – distribuição de cestas básicas e oficinas de culinária.  
-- Página de cadastro de voluntários com formulário interativo.  
-- Botões de chamada para ação (**Seja Voluntário**) funcionando em todas as páginas.  
-- Contato: sousakauan562@gmail.com | (11) 93908-5433
+Página inicial com informações institucionais, missão, visão e valores.
+
+Página de projetos com os destaques:
+
+Educar para Crescer – reforço escolar e oficinas educativas.
+
+Alimento para Todos – distribuição de cestas básicas e oficinas de culinária.
+
+Página de cadastro de voluntários com formulário interativo:
+
+Validação de campos obrigatórios e formato de e-mail.
+
+Máscaras de entrada para CPF, telefone e CEP.
+
+Verificação de CPF válido antes do envio.
+
+Alert de sucesso ao concluir o cadastro.
+
+Botões “Seja Voluntário” funcionando em todas as páginas, direcionando corretamente para a página de cadastro.
+
+Layout responsivo e design consistente com cores naturais e verdes.
+
+Contato: sousakauan562@gmail.com
+ | (11) 93908-5444
 
 ## Tecnologias Utilizadas
 
