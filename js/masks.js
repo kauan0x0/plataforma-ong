@@ -1,29 +1,19 @@
-// ======= masks.js =======
-// Aplicação automática de máscaras
+// js/masks.js
+export function aplicarMascara(input) {
+  if (!input) return;
 
-function aplicarMascaraCPF(input) {
-  input.addEventListener("input", () => {
-    let v = input.value.replace(/\D/g, "");
-    v = v.replace(/(\d{3})(\d)/, "$1.$2");
-    v = v.replace(/(\d{3})(\d)/, "$1.$2");
-    v = v.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
-    input.value = v;
+  input.addEventListener('input', () => {
+    let valor = input.value.replace(/\D/g, '');
+    if (input.id === 'cpf') {
+      valor = valor.replace(/(\d{3})(\d)/, '$1.$2');
+      valor = valor.replace(/(\d{3})(\d)/, '$1.$2');
+      valor = valor.replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+    } else if (input.id === 'telefone') {
+      valor = valor.replace(/^(\d{2})(\d)/g, '($1) $2');
+      valor = valor.replace(/(\d{5})(\d{4})$/, '$1-$2');
+    } else if (input.id === 'cep') {
+      valor = valor.replace(/(\d{5})(\d)/, '$1-$2');
+    }
+    input.value = valor;
   });
 }
-
-function aplicarMascaraTelefone(input) {
-  input.addEventListener("input", () => {
-    let v = input.value.replace(/\D/g, "");
-    v = v.replace(/^(\d\d)(\d)/g, "($1) $2");
-    v = v.replace(/(\d{4,5})(\d{4})$/, "$1-$2");
-    input.value = v;
-  });
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  const cpfInput = document.querySelector("#cpf");
-  const telInput = document.querySelector("#telefone");
-
-  if (cpfInput) aplicarMascaraCPF(cpfInput);
-  if (telInput) aplicarMascaraTelefone(telInput);
-});
