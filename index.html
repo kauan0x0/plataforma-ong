@@ -1,51 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Educar e Crescer</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>Educar e Crescer</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Início</a></li>
-          <li><a href="projetos.html">Projetos</a></li>
-          <li><a href="cadastro.html">Cadastro</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section class="container hero">
-    <h2>Bem-vindo à Educar e Crescer</h2>
-    <p>Transformando vidas através da educação e do voluntariado.</p>
-    <div class="hero-buttons">
-      <a href="cadastro.html" class="btn">Seja Voluntário</a>
-      <a href="projetos.html" class="btn">Conheça os Projetos</a>
-    </div>
-  </section>
-
-  <section class="container about">
-    <h2>Sobre Nós</h2>
-    <p>Educar e Crescer é uma ONG dedicada a promover oportunidades educativas e sociais para crianças e jovens, engajando voluntários e apoiadores em nossas iniciativas.</p>
-  </section>
-
-  <footer>
-    <p>Email: <a href="mailto:sousakauan562@gmail.com">sousakauan562@gmail.com</a> | Telefone: <a href="tel:+5511939085444">(11) 93908-5444</a></p>
-  </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Educar e Crescer | Plataforma ONG</title>
+  <title>Educar e Crescer | Início</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -61,27 +19,27 @@
           <li><a href="cadastro.html">Cadastro</a></li>
         </ul>
       </nav>
-      <button id="toggle-contraste" class="btn-contraste" aria-label="Ativar modo alto contraste">
-        ♿ Contraste
-      </button>
+      <button id="toggle-contraste" class="btn-contraste" aria-label="Alternar modo de acessibilidade">♿ Acessibilidade</button>
     </div>
   </header>
 
   <main id="conteudo-principal" tabindex="-1">
-    <section>
+    <section class="container hero">
       <h2>Transformando vidas através da educação e solidariedade</h2>
-      <img src="img/educar.jpg" alt="Crianças estudando em uma sala de aula com um voluntário ajudando" />
       <p>A plataforma Educar e Crescer conecta voluntários e ONGs para promover educação e inclusão social.</p>
-      <a href="cadastro.html" class="btn" role="button">Seja Voluntário</a>
+      <div class="hero-buttons">
+        <a href="cadastro.html" class="btn" role="button">Seja Voluntário</a>
+        <a href="projetos.html" class="btn" role="button">Conheça os Projetos</a>
+      </div>
     </section>
   </main>
 
   <footer role="contentinfo">
     <p>Email: <a href="mailto:sousakauan562@gmail.com">sousakauan562@gmail.com</a> |
-       Telefone: <a href="tel:+5511939085433">(11) 93908-5433</a></p>
+    Telefone: <a href="tel:+5511939085444">(11) 93908-5444</a></p>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/acessibilidade.js"></script>
+  <div id="statusAcessibilidade" aria-live="polite" class="sr-only"></div>
 </body>
 </html>
-<p>Versão de acessibilidade 1.0</p>

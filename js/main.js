@@ -25,3 +25,7 @@ form.addEventListener('submit', (e) => {
   alert('Cadastro realizado com sucesso!');
   form.reset();
 });
+// Alternar modo alto contraste
+document.getElementById("toggle-contraste").addEventListener("click", () => {
+  document.body.classList.toggle("contraste");
+});
